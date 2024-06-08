@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <link rel="stylesheet" href="resource/styles.css">
+    <link rel="icon" href="resource/icon/family.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="about.html" target="_blank">About Me</a></li>
+                <li><a href="family.html" target="_blank">My Family</a></li>
+                <li><a href="hobbies.html" target="_blank">My Hobbies</a></li>
+                <li><a href="idol.html" target="_blank">Favourite Idol</a></li>
+                <li><a href="gallery.html" target="_blank">Gallery</a></li>
+                <li><a href="contact.html" target="_blank">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="family" class="family">
+        <div class="container">
+            <h2>My Family</h2>
+            <img src="resource/image/family.jpg" alt="Family Photo" class="family-photo">
+            <div class="family-items">
+
+                <div class="family-item">
+                    <img src="resource/image/mother.jpg" alt="Mother">
+                    <h3>My Mother</h3>
+                    <p>My mom is the best! She's super caring and strong. Whenever I feel down or need help, she's always there with a hug and some wise advice. She works really hard to take care of our family, and she does it with a smile on her face. Even when things get tough, she never gives up. She's my role model, showing me how to be kind, patient, and determined. I can't imagine my life without her love and support. She's like a superhero to me, always saving the day with her warmth and strength.</p>
+                </div>
+
+                <div class="family-item">
+                    <img src="resource/image/sister.jpg" alt="Sister">
+                    <h3>My Little Sister</h3>
+                    <p>My little sister is the coolest! She's small but full of energy and fun. No, I'm kidding! She's taller than me! She loves playing games and making everyone laugh. Even though she's younger, she's really smart and always curious about everything. She's like a little ray of sunshine in our family, bringing joy wherever she goes. I'm so lucky to have her as my sister.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <button class="scroll-to-top" onclick="scrollToTop()"><img src="resource/icon/arrow.png" alt="Top arrow"></button>
+    </div>
+</footer>
+
+<script>
+    function scrollToTop() {
+       window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.onscroll = function() {
+        var scrollButton = document.querySelector('.scroll-to-top');
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollButton.style.display = "block";
+        } else {
+            scrollButton.style.display = "none";
+        }
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <link rel="stylesheet" href="resource/styles.css">
+    <link rel="icon" href="resource/icon/hobby.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<ul class="nav-links">
+   <li><a href="index.html" target="_blank">Home</a></li>
+   <li><a href="about.html" target="_blank">About Me</a></li>
+   <li><a href="family.html" target="_blank">My Family</a></li>
+   <li><a href="hobbies.html" target="_blank">My Hobbies</a></li>
+   <li><a href="idol.html" target="_blank">Favourite Idol</a></li>
+   <li><a href="gallery.html" target="_blank">Gallery</a></li>
+   <li><a href="contact.html" target="_blank">Contact Me</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section id="hobbies" class="hobbies">
+<div class="container">
+    <h2>My Hobbies</h2>
+    <div class="hobby-items">
+        <div class="hobby-item">
+            <img src="resource/image/photo.png" alt="Photography">
+
+            <h3>Photography</h3>
+            <p>I really enjoy photography because it lets me capture moments and create beautiful images. One of my favorite things to photograph is nature, especially the sky. I love taking pictures of sunsets, storms, and clear blue skies. Each type of sky has its own special beauty, and I like trying different angles and lighting to make my photos unique. Through my pictures, I aim to share the amazing beauty of nature with others.</p>
+        </div>
+
+        <div class="hobby-item">
+            <img src="resource/image/food.png" alt="Cooking">
+            <h3>Cooking</h3>
+            <p>Cooking is one of my favorite things to do. I love trying new recipes and making tasty meals. I really enjoy making Western food like pasta, burgers, and salads. These dishes are fun to make and always delicious. I also like cooking simple meals, like fried rice. It's quick and easy to prepare, and you can add different things to it, like vegetables, chicken, or shrimp, to make it taste even better.</p>
+        </div>
+
+        <div class="hobby-item">
+            <img src="resource/image/travel.png" alt="Traveling">
+            <h3>Traveling</h3>
+            <p>Traveling is something I really love. It's exciting to see new places and experience different cultures. I have traveled all around Malaysia and visited many beautiful places. Malaysia has amazing beaches, green rainforests, and lively cities. Each place has its own special charm. I have also been to Madinah and Makkah. These trips were very special to me. In Madinah, I felt very peaceful. The city's history and beautiful mosques were wonderful. In Makkah, seeing the Kaaba was unforgettable.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+    <p>&copy; 2024 Nur Alya Ixora. All rights reserved.</p>
+    <button class="scroll-to-top" onclick="scrollToTop()"><img src="resource/icon/arrow.png" alt="Top arrow"></button>
+</div>
+</footer>
+
+<script>
+        
+    function scrollToTop() {
+       window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+        
+    window.onscroll = function() {
+        var scrollButton = document.querySelector('.scroll-to-top');
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollButton.style.display = "block";
+        } else {
+            scrollButton.style.display = "none";
+        }
+    };
+</script>
+
+</body>
+</html>
